@@ -1,0 +1,84 @@
+<html> 
+<head>
+<title>GitHub</title>
+</head>
+<body background="ki.gif">
+<center>
+<style>
+body {
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+section{
+ margin: 50px;
+}
+fieldset { 
+ font-family: sans-serif;
+ border: 5px solid black;
+ background: #ADD8E6;
+ border-radius: 5px;
+ padding: 20px;
+ box-shadow: 15px 15px 8px #555555;
+ width: 600px;
+} 
+fieldset legend {
+ text-align: center;
+ background: white;
+ color: white;
+ padding: 5px 10px;
+ font-size: 25px;
+ border-radius: 5px;
+ box-shadow: 0 0 0 5px black; 
+}
+video {
+ width: 450px; 
+ border: 5px solid white;
+}
+img {
+ width: 130px; 
+ height: 55px
+}
+button {
+ background-color: black;
+ border: 2px solid white;
+ color: white;
+ padding: 10px 25px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 20px;
+ margin: 4px 2px;
+ width: 110px;
+ cursor: pointer;
+}
+button:hover {
+ background-color: orange;
+}
+</style>
+<section> 
+<fieldset> 
+<legend>
+<img src="gitt.png">
+
+</legend>
+<video id="myVideo" loop="true"> 
+<source src="ricky.mp4" type="video/mp4"> 
+</video> 
+
+<br><br>
+
+<button onclick="playVideo()" type="button">Play</button> 
+<button onclick="pauseVideo()" type="button">Pause</button> 
+</fieldset>
+
+<script> 
+var x = document.getElementById("myVideo"); 
+function playVideo() 
+{ x.play(); } 
+function pauseVideo() 
+{ x.pause(); } 
+</script>
+</center>
+</body>
+</html>
